@@ -1,0 +1,16 @@
+.Radio {
+	position: absolute;
+    display: flex;
+    
+	@include postionRad(70%, 50%);
+    transform: translate(-50%, -50%);
+
+    background-color: rgba($babyBlue, 0.7);
+    border-radius: 10px;
+    
+
+    .Rad{
+        cursor: pointer;
+    }
+
+}

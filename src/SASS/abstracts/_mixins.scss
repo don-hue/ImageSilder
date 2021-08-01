@@ -1,0 +1,40 @@
+@mixin postionRad($top, $left) {
+	top: $top;
+	left: $left;
+};
+
+@mixin Animation($Start,$End,$Dir) {
+	animation-name: this;
+	animation-duration: 1s;
+	animation-fill-mode: $Dir;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(0.18, 0.89, 0.71, 1.37);
+
+	@keyframes this {
+		0% {
+			margin-left: $Start;
+		}
+
+		100% {
+			margin-left: $End;
+		}
+	}
+}
+
+@mixin AnimationB($Start,$End,$Dir) {
+	animation-name: that;
+	animation-duration: 1s;
+	animation-fill-mode: $Dir;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(0.18, 0.89, 0.71, 1.37);
+
+	@keyframes that {
+		0% {
+			margin-left: $Start;
+		}
+
+		100% {
+			margin-left: $End;
+		}
+	}
+}

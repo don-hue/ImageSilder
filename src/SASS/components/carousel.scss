@@ -1,0 +1,39 @@
+.box {
+	position: relative;
+	height: 200px;
+	width: 300px;
+}
+
+.img1 {
+	background-color: pink;
+	margin-left: 0%;
+}
+.img2 {
+	background-color: powderblue;
+	margin-left: 0%;
+	
+
+}
+.img3 {
+	background-color: red;
+	margin-left: 0%;
+
+}
+
+.img4 {
+	background-color: $darkBlue;
+	margin-left: 0%;
+}
+
+.img5 {
+	background-color: pink;
+	margin-left: 0%;
+}
+
+.imgAnim {
+	@include Animation(0%, -100%, forwards);
+}
+
+.imgAnimB {
+	@include AnimationB(-100%, 0%,forwards);
+}
